@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rxui:ReactiveContentPage x:Class="TestReactiveUI.MainPage"
+                          xmlns="http://xamarin.com/schemas/2014/forms"
+                          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                          xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                          xmlns:rxui="clr-namespace:ReactiveUI.XamForms;assembly=ReactiveUI.XamForms"
+                          xmlns:vm="clr-namespace:TestReactiveUI"
+                          x:TypeArguments="vm:MainPageViewModel"
+                          mc:Ignorable="d">
+    <StackLayout Padding="20,50">
+        <!--  Place new controls here  -->
+        <Label Text="First Value" />
+        <Entry x:Name="FirstEntry"
+               Keyboard="Numeric" />
+
+
+        <Label Text="Second Value" />
+        <Entry x:Name="SecondEntry"
+               Keyboard="Numeric" />
+
+
+        <Label Text="Result" />
+        <Entry x:Name="ResultEntry"
+               IsReadOnly="True" />
+    </StackLayout>
+</rxui:ReactiveContentPage>
